@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomerComponent } from './customer.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -9,7 +9,10 @@ import { CustomerComponent } from './customer.component';
     CustomerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      { path: "", component: CustomerComponent }
+    ])
   ]
 })
 export class CustomerModule { }
