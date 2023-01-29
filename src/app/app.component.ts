@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-declare var $: any
+//declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,11 @@ declare var $: any
 })
 export class AppComponent {
   title = 'ETicaretClient';
+  
+  constructor() {
+  }
+  
+
 }
 
-$(document).ready(() => alert("jquery test"));
+//$(document).ready(() => alert("jquery test"));
