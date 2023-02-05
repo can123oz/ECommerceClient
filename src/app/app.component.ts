@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//declare var $: any
+declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -15,4 +15,7 @@ export class AppComponent {
 
 }
 
+/* $.get( "https://localhost:7228/api/Products/Test1", data => {
+  console.log("success : ",data);
+}); */
 //$(document).ready(() => alert("jquery test"));

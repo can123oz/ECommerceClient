@@ -8,22 +8,26 @@ import { UiModule } from './ui/ui.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
+    HttpClientModule,
     UiModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     NgxSpinnerModule,
   ],
-  providers: [],
+  providers: [
+    { provide:"baseUrl", useValue: "https://localhost:7228/api", multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
