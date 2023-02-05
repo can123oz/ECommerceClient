@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { CreateComponent } from './create/create.component';
 import { ListComponent } from './list/list.component';
 import {MatButtonModule} from '@angular/material/button';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -25,7 +26,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSidenavModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxSpinnerModule
   ]
 })
 export class ProductsModule { }
